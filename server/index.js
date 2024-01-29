@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors(
     {
-        origin: ["https://tweetx-ten.vercel.app"],
+        origin: ["https://tweetx-ui.vercel.app"],
         method: ["GET","POST","PATCH","DELETE"],
         credentials: true
     }
