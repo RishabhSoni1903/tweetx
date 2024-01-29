@@ -20,7 +20,7 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
           <Route exact path='/' element={<Feed />}></Route>
-          <Route path='/profile' element={<UserProfile userData={userData} />}>
+          <Route path='/profile' element={<UserProfile />}>
             <Route path='posts' element={<MyPosts />}></Route>
             <Route path='followers' element={<Followers />}></Route>
             <Route path='following' element={<Following />}></Route>
