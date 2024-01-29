@@ -17,13 +17,6 @@ function App() {
     <Router>
       <div className='App'>
         <Navbar />
-        {/* <br />
-        <Post />
-        <Post />
-        <Post />
-        <User />
-        <User />
-      <User /> */}
         <Routes>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
