@@ -13,7 +13,13 @@ const app = express();
 app.use(express.json())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors())
+app.use(cors(
+    {
+        origin: ['https://tweetx-qq47.vercel.app'],
+        method: ["GET","POST","PATCH","DELETE"],
+        credentials: true
+    }
+))
 
 app.post("/register", register);
 app.post("/login", login);
