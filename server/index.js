@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors(
     {
         origin: ["https://tweetx-ten.vercel.app"],
-        method: ["GET","POST","PATCH","DELETE"],
+        method: ["GET", "POST", "PATCH", "DELETE"],
         credentials: true
     }
 ))
@@ -31,3 +31,5 @@ mongoose.connect(process.env.MONGO_URL, {
 }).then(() => {
     app.listen(PORT, () => { console.log(`Server Port: ${PORT}`) })
 }).catch((error) => { console.log(`${error} did not connect`) })
+
+export default app;

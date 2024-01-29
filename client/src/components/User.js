@@ -5,7 +5,6 @@ const User = ({ data }) => {
 
     const user = JSON.parse(localStorage.getItem('user'));
 
-    //problematic line
     const [isFollowing, setIsFollowing] = useState(user.following.includes(data._id))
 
     const handleFollow = async () => {
