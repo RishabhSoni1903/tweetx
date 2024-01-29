@@ -11,7 +11,6 @@ const Followers = () => {
             const id = JSON.parse(localStorage.getItem('user'))._id;
             const token = localStorage.getItem('jwt_token')
             const response = await axios.get(`user/${id}/followers`, { headers: { 'Authorization': `Bearer ${token}` } })
-            console.log(response.data)
             setFollowers(response.data)
         } catch (error) {
             console.log(error)

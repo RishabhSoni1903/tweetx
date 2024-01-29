@@ -16,9 +16,7 @@ const WritePostBtn = () => {
     }
 
     const handleClick = () => {
-        console.log("Write post clicked")
         const content = prompt("What's on your mind...")
-        console.log({ content })
         addPost(content);
     }
 

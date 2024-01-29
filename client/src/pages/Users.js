@@ -22,7 +22,7 @@ const Users = () => {
 
     return (
         <div className='w-2/5 my-4 py-2 mx-auto *:divide-y *:divide-[#707070]'>
-            {users.length > 0 ? users.map((user) => <div><User key={user._id} data={user} /></div>) :
+            {users.length > 0 ? users.map((user) => <div key={user._id}><User data={user} /></div>) :
                 <div className='text-center text-4xl text-[#707070] my-16'>No users to show!</div>}
         </div>
     )
