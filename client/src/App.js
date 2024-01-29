@@ -13,11 +13,6 @@ import { useEffect } from 'react';
 
 function App() {
 
-  useEffect(() => {
-  }, [])
-
-  const userData = JSON.parse(localStorage.getItem("user"))
-
   return (
     <Router>
       <div className='App'>
