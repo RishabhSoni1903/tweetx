@@ -9,24 +9,13 @@ import UserProfile from './components/UserProfile';
 import Followers from './components/Followers';
 import Following from './components/Following';
 import MyPosts from './components/MyPosts';
-import { useEffect } from 'react';
 
 function App() {
-
-  useEffect(() => {
-  }, [])
 
   return (
     <Router>
       <div className='App'>
         <Navbar />
-        {/* <br />
-        <Post />
-        <Post />
-        <Post />
-        <User />
-        <User />
-      <User /> */}
         <Routes>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
