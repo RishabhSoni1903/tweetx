@@ -20,7 +20,9 @@ app.use(cors(
         credentials: true
     }
 ))
-
+app.use("/", (req,res)=>{
+    res.json({message: "Hello"});
+});
 app.post("/register", register);
 app.post("/login", login);
 app.use("/post", postRoutes)
